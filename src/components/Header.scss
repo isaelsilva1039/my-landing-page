@@ -1,0 +1,391 @@
+.hero-section {
+  background: #1D4ED8;
+  color: white;
+  padding: 4rem 0;
+  z-index: 1;
+  // position: fixed;
+
+  .hero-image-top{
+    position: absolute;
+    right: 797px;
+    top: 119px;
+    animation: moveUpDownTop 3s ease-in-out infinite;
+  }
+
+  .hero-image-bottom{
+    position: absolute;
+    top: 615px;
+    right: 300px;
+    animation: moveUpDownBottomRight 3s ease-in-out infinite;
+  }
+
+  .hero-image-bottom-left{
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    border-radius: 8px;
+    border: 1px solid rgba(147, 197, 253, 0.5);
+    right: 803px;
+    top: 613px;
+    animation: moveUpDownBottomLeft 6s ease-in-out infinite;
+    
+  }
+
+  .quadro-top{
+    width: 428px;
+    height: 428px;
+    position: absolute;
+    right: 286px;
+    top: 105px;
+    border-radius: 8px;
+    border: 1px solid rgba(147, 197, 253, 0.50);
+    animation: moveUpDownTopRight 2s ease-in-out infinite;
+  }
+ 
+
+  .text-section {
+
+    padding: 74px 0px 0px h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-family: var(--font-family-main, Inter);
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 150%;
+      /* 48px */
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    .cta-button {
+      display: flex;
+      width: 240px;
+      height: 48px;
+      padding: 8px 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 4px;
+      color: #2563EB;
+      background: var(--colors-gray-0, #FFF);
+    }
+  }
+
+  .image-section {
+
+    display: flex;
+    // width: 100%;
+    justify-content: end;
+
+    .hero-image {
+
+      width: 524px;
+      height: 524px;
+      gap: 0px;
+      border-radius: 8px;
+      opacity: 0px;
+      z-index: 1;
+
+      // width: 100%;
+      // border-radius: 10px;
+      // box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      // height: 450px;
+    }
+  }
+
+
+}
+
+
+
+.feature-cards {
+  fill: var(--colors-gray-500, #737373);
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  background: #1D4ED8;
+  display: flex;
+  width: 1661px;
+  height: 220px;
+  z-index: 1;
+  position: absolute;
+
+  .quadros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    width: 308px;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid var(--colors-gray-200, #E5E5E5);
+    background: #FFF;
+    height: fit-content;
+    position: relative; /* Necessário para controlar a posição das imagens e do quadro */
+    overflow: hidden; /* Esconde qualquer parte que se mova fora da área do card */
+
+
+
+
+    & .titulo{
+      align-self: stretch;
+      color: var(--colors-blue-900, #1E3A8A);
+      text-align: center;
+      font-family: var(--font-family-main, Inter);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; /* 20px */
+    }
+
+
+    & .text{
+      color: #4B4F58;
+      text-align: center;
+      font-family: var(--font-family-main, Inter);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 125%; /* 17.5px */
+      align-self: stretch;
+    }
+
+
+    &:hover {
+      .img-line-top {
+          transform: translate(-10px, -5px); /* Move um pouco para cima e para a esquerda */
+      }
+
+      .img-line-botton {
+          transform: translate(10px, 5px); /* Move um pouco para baixo e para a direita */
+          z-index: 0; /* Coloca as imagens para trás */
+      }
+
+      .div-quadro {
+        transform: translate(5px, -3px); /* Move um pouco para cima e para a esquerda */
+          // z-index: 1; /* Coloca o quadro para frente */
+      }
+
+      .hero-image {
+        transform: scale(1.5); /* Aumenta a imagem */
+        transition: transform 0.4s ease-in-out; /* Suaviza o aumento */
+      }
+  }
+
+
+    .div-quadro {
+      width: 64px;
+      height: 64px;
+
+      border-radius: 8px;
+      border: 1px solid var(--colors-blue-300, #93C5FD);
+
+      position: absolute;
+      bottom: 140px;
+      left: 10px;
+      transition: transform 0.4s ease; /* Transição suave para a posição */
+
+    }
+
+    .hero-image {
+
+      transition: transform 0.4s ease-in-out; /* Suaviza o aumento */
+    }
+
+    & .img-line-top {
+      position: absolute;
+      top: 37px;
+      left: 37px;
+      transition: transform 0.4s ease; /* Transição suave para a posição */
+
+    }
+
+    & .img-line-botton {
+      position: absolute;
+      right: 38px;
+      bottom: 145px;
+      transition: transform 0.4s ease; /* Transição suave para a posição */
+
+    }
+
+
+
+    & .sub-card {
+      display: flex;
+      width: 276px;
+      height: 276px;
+      padding: 32px;
+      align-items: flex-start;
+      z-index: 1;
+
+      & .card-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1 0 0;
+        align-self: stretch;
+        border-radius: 8px;
+        background: var(--colors-blue-light-50, #F0F9FF);
+
+        & img {
+          width: 64px;
+          height: 64px;
+        }
+      }
+    }
+  }
+
+
+  // .card-item{
+  //   display: flex;
+  //   width: 308px;
+  //   padding: 16px;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  //   gap: 16px;
+  //   flex-shrink: 0;
+
+
+  //   & .item{
+  //    display: flex;
+  //     width: 276px;
+  //     height: 276px;
+  //     padding: 32px;
+  //     align-items: flex-start;
+
+  //     &  img{
+  //       display: flex;
+  //       flex-direction: column;
+  //       justify-content: center;
+  //       align-items: center;
+  //       flex: 1 0 0;
+  //       align-self: stretch;
+
+  //     }
+
+  //   }
+
+
+  // }
+
+  .feature-card {
+    background-color: #f8faff;
+    border: none;
+    margin-top: 1rem;
+    text-align: center;
+
+
+
+
+    .icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-text {
+      color: var(--colors-gray-0, #FFF);
+
+    }
+  }
+}
+
+
+
+
+    @keyframes moveUpDownTop {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        // transform: translateY(-5px);
+        transform: translate(-10px, -5px); /* Move um pouco para cima e para a esquerda */
+        /* Movimenta um pouco para cima */
+      }
+
+      100% {
+        transform: translateY(0);
+        /* Volta para a posição original */
+      }
+    }
+
+    @keyframes moveUpDownBottom {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(5px);
+        /* Movimenta um pouco para baixo */
+      }
+
+      100% {
+        transform: translateY(0);
+        /* Volta para a posição original */
+      }
+    }
+
+    @keyframes moveUpDownTopRight {
+      0% {
+        transform: translate(0, 0); /* Começa na posição original */
+      }
+    
+      50% {
+        transform: translate(10px, -10px); /* Move para cima e para a direita */
+      }
+    
+      100% {
+        transform: translate(10px, -10px); /* Levemente ajustado para voltar à posição original */
+      }
+    }
+    
+
+    @keyframes moveUpDownBottomRight {
+      0% {
+        transform: translate(0, 0); /* Começa na posição original */
+      }
+    
+      50% {
+        transform: translate(15px, 5px); /* Move para o canto inferior direito */
+      }
+    
+      100% {
+        transform: translate(0, 0); /* Volta para a posição original */
+      }
+    }
+    
+
+
+    @keyframes moveUpDownBottomLeft {
+      0% {
+        transform: translate(0, 0); /* Começa na posição original */
+      }
+    
+      50% {
+        transform: translate(-15px, 5px); /* Move para o canto inferior esquerdo */
+      }
+    
+      100% {
+        transform: translate(0, 0); /* Volta para a posição original */
+      }
+    }
+    

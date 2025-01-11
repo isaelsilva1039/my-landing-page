@@ -1,0 +1,79 @@
+@import '../../variables.scss'; // Certifique-se de que o caminho do arquivo esteja correto
+
+
+// Navbar.scss
+.custom-navbar {
+
+
+    .navbar-nav{
+      display: flex;
+      padding: 0px 16px;
+      align-items: center;
+      gap: 10px;
+      align-self: stretch;
+    }
+
+    background: #1D4ED8 !important;
+    .logo {
+      height: 40px;
+      margin-right: 10px;
+    }
+  
+    .contact-button {
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 6px 16px;
+    }
+
+    .contact-button:hover{
+        background: #2659e6 !important;
+        color: white;
+    }
+  }
+  
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // gap: 90px !important;
+
+  }
+
+
+
+  .nav-item {
+    position: relative;
+    padding-bottom: 5px;
+
+
+    //styleName: label/sm-xxx;
+    font-family: var(--font-family-main, Inter);
+    font-size: var(--font-size-small-sm-xx, 16px);
+    font-style: normal;
+    font-weight: var(--font-weight-medium-md-x, 500);
+    line-height: var(--font-line-height-small-sm-xx, 20px); /* 125% */
+
+  }
+  
+  .nav-item:hover {
+    color: #fff; /* Cor do texto ao passar o mouse */
+  }
+  
+  .nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff; /* Cor da linha */
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav-item:hover::after {
+    transform: scaleX(1);
+  }

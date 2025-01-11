@@ -1,3 +1,4 @@
+@import './variables.scss';
 .App {
   text-align: center;
 }
@@ -27,6 +28,51 @@
 .App-link {
   color: #61dafb;
 }
+
+
+
+
+.app-container {
+    width: 1920px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+
+  .linha{
+    position: absolute;
+    right: 0px;
+    top: 444px;
+  }
+
+  .linha-96{
+    position: absolute;
+    left: 60px;
+    top: 820px;
+    z-index: 0;
+  }
+  .linha-97{
+    position: absolute;
+    left: 95px;
+    top: 820px;
+  }
+  .linha-98{
+    position: absolute;
+    left: 128px;
+    top: 820px;
+  }
+  .linha-99{
+    position: absolute;
+    left: 163px;
+    top: 820px;
+  }
+
+
+
+
+
 
 @keyframes App-logo-spin {
   from {

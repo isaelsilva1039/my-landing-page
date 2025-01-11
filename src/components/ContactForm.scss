@@ -1,0 +1,30 @@
+// ContactForm.scss
+.contact-form {
+    padding: 2rem;
+    background-color: #ffffff;
+    margin: 2rem auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
