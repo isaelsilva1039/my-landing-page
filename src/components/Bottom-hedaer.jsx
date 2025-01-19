@@ -2,13 +2,17 @@ import React from 'react';
 import { Card, Col, Container, Image, Row } from 'react-bootstrap';
 
 import './Header.scss';
+import ProductWhitLabel from './ProductWhitLabel';
 
 function BottomHeader() {
 
 
 
     return (
+        <>
         <div className="feature-cards ">
+            <Col md={2}>
+            </Col>
             {/* <Row className='quadros'> */}
             <Col md={2}>
                 <div className='card'>
@@ -71,9 +75,13 @@ function BottomHeader() {
                     <div className='text'>Ganhe tempo para se dedicar inteiramente ao seu negócio enquanto cuidamos da tecnologia.</div>
                 </div>
             </Col>
+
+
+           
             {/* </Row> */}
         </div>
-      
+       {/* <ProductWhitLabel /> */}
+       </>
     );
 }
 

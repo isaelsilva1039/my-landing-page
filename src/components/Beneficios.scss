@@ -1,0 +1,135 @@
+@import '../variables.scss';
+
+.container-beneficios{
+    
+    width: 84%;
+    height: 2056px;
+    top: 1954px;
+    right: 0;
+    gap: 0px;
+    border-radius: 48px 0px 0px 48px;
+    position: absolute;
+    background: var(--colors-blue-light-50, #F0F9FF);
+
+    & .container-beneficios-col1{
+            display: flex;
+            justify-content: center;
+            padding: 48px 16px 64px 16px;
+            gap: 48px;
+            border-radius: 48px;
+            flex-direction: column;
+            align-items: center;
+      
+        & text {
+            font-family: var(--fontfamilymain);
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 40px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: var(--colors-blue-900, #1E3A8A);
+        }
+
+
+        & .container-quadros1{
+            width: 1000px;
+            height: 416px;
+            display: flex;
+            gap: 0px;
+            justify: space-between;
+            opacity: 0px;
+            background: var(--colors-blue-light-50, #F0F9FF);
+
+
+            & .card-1{
+                display: flex;
+                align-items: center;
+
+                & .card-text{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 18px;
+                    font-family: var(--fontfamilymain);
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 18px;
+                    padding: 0px 0px 0px 0px;
+                    justify-content: center;
+                    max-width: 416px;
+
+                    &  div{
+                        color: #4B4F58;
+                        font-family: var(--font-family-main, Inter);
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%; /* 30px */
+
+                    }
+                }
+
+            }
+
+            & .card-imagem{
+                background: var(--colors-blue-500, #3B82F6);
+                gap: 0px;
+                border-radius: 8px ;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .card-2{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                & .card-text{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 18px;
+                    font-family: var(--fontfamilymain);
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    display: flex;
+                    flex-direction: column;
+         
+                    gap: 18px;
+                    padding: 0px 0px 0px 0px;
+                    justify-content: center;
+                    max-width: 416px;
+
+                    & text {
+                        text-align: start;
+                    }
+
+                    &  div {
+                        color: #4B4F58;
+                        font-family: var(--font-family-main, Inter);
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%; /* 30px */
+                    }
+
+                }
+            }
+
+        }
+    }
+}

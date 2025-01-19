@@ -8,20 +8,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import BottomHeader from './components/Bottom-hedaer';
 import { Image } from 'react-bootstrap';
+import ProductWhitLabel from './components/ProductWhitLabel';
+import Beneficios from './components/Beneficios';
+import Sobre from './components/Sobre';
+import Parceirias from './components/Parceirias';
 
 
 function App() {
   return (
     <div className="app-container">
-       <Image className='linha-99' src="assets/Vector4.png" />
-       <Image className='linha-98' src="assets/Vector3.png" />
-       <Image className='linha-97' src="assets/Vector2.png" />
-            <Image className='linha-96' src="assets/Vector1.png" />
+      
   
 
            
       <Header />
       <BottomHeader />
+      <ProductWhitLabel />
+      <Beneficios />
+      <Sobre />
+      <Parceirias />
       {/* <FeatureSection /> */}
       {/* <ContactForm /> */}
       {/* <Footer /> */}
