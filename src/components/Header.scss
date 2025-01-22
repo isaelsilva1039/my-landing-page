@@ -3,6 +3,7 @@
   color: white;
   padding: 4rem 0;
   z-index: 1;
+  height: 90vh;
   // position: fixed;
 
   .hero-image-top{
@@ -100,25 +101,31 @@
 
 }
 
+.linha {
+  margin-top: 8%;
+}
 
+.quadro {
+  width: 15.2rem;
+  height: 20%;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  bottom: 0%;
+}
 
 .feature-cards {
   fill: var(--colors-gray-500, #737373);
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 70px;
   background: #1D4ED8;
   display: flex;
-  width: 1661px;
-  height: 220px;
+  width: 100%;
+  height: 0%;
   z-index: 1;
   position: absolute;
-
-  .quadros{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
   .card {
     display: flex;

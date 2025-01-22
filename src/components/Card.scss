@@ -1,0 +1,29 @@
+.card-container {
+    max-width: 20%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    align-self: center;
+  
+    &:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  
+  .title-card {
+    color: #1e3a8a;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  
+  .description-card {
+    color: #4b4f58;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+  

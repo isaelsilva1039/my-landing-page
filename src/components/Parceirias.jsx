@@ -4,10 +4,10 @@ import { Col, Image } from 'react-bootstrap';
 
 const Parceirias = () => {
   return (
-    <div className="contact-container">
+    <div className="contact-container" id='parceiros'>
 
       <Col md={1} className="contact-image">
-        <Image className='app-png' src="assets/image.png"/>
+        <Image className='app-png' src="assets/image-container.svg"/>
       </Col>
 
       <Col md={11} className="contact-form">
@@ -55,6 +55,10 @@ const Parceirias = () => {
           </button>
         </form>
       </Col>
+
+      <div style={{ position: 'absolute', marginTop: '168vh', marginLeft: '4vw' }}>
+          <Image src='assets/effects-line-3.svg' />
+      </div>
     </div>
   );
 };

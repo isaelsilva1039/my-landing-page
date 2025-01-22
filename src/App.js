@@ -12,29 +12,32 @@ import ProductWhitLabel from './components/ProductWhitLabel';
 import Beneficios from './components/Beneficios';
 import Sobre from './components/Sobre';
 import Parceirias from './components/Parceirias';
-
+import { Home } from './pages/Home/Home';
+import { Teste } from './components/Teste';
 
 function App() {
   return (
     <div className="app-container">
+      <Home />
       
-  
-
-           
-      <Header />
-      <BottomHeader />
-      <ProductWhitLabel />
       <Beneficios />
-      <Sobre />
-      <Parceirias />
+
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 100 }}>
+        <div style={{ marginTop: '-40vh' }}>
+          <Sobre />
+        </div>
+
+        <Parceirias />
+      </div>
+
+      <div style={{ marginTop: '30vh', marginBottom: '30vh', display: 'flex', justifyContent: 'end' }}>
+        <Teste />
+      </div>
       {/* <FeatureSection /> */}
       {/* <ContactForm /> */}
-      {/* <Footer /> */}
+      <Footer /> 
     </div>
   );
 }
-
-
-
 
 export default App;

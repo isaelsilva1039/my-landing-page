@@ -2,7 +2,35 @@
 .footer {
     background-color: #0044cc;
     color: white;
-    text-align: center;
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo-routes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+}
+
+.list-routes {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+
+  li {
+    opacity: 0.5;
   }
+}
   
+.social-midia {
+  background-color: #1E3A8A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 4rem;
+}
