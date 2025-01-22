@@ -2,16 +2,25 @@ import React from 'react';
 import './Beneficios.scss';
 import CustomNavbar from './CustomNavbar/CustomNavbar';
 import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap';
+import ProductWhitLabel from './ProductWhitLabel';
 
 function Beneficios() {
 
   return (
-    <div style={{ width: '100%' }}>
+    <>
+      {/* <div style={{ position: 'absolute', top: '90vh', left: '3vw'}}>
+        <Image src="assets/effects-line.svg" />
+        {/* <Image className='linha-98' src="assets/Vector3.png" />
+        <Image className='linha-97' src="assets/Vector2.png" />
+        <Image className='linha-96' src="assets/Vector1.png" />
+      </div> */}
 
-      <Image className='linha-99' src="assets/Vector4.png" />
-      <Image className='linha-98' src="assets/Vector3.png" />
-      <Image className='linha-97' src="assets/Vector2.png" />
-      <Image className='linha-96' src="assets/Vector1.png" />
+     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '380vh', gap: 180 }}>
+      <div>
+        <ProductWhitLabel />
+      </div>
+
+
       <div className="container-beneficios">
         <Col md={10} className='container-beneficios-col1'>
 
@@ -82,10 +91,14 @@ function Beneficios() {
           </div>
         
         </Col>
-        <Col md={2}>
-        </Col>
+
       </div>
-    </div>
+
+          <div style={{ position: 'absolute', right: '2%', marginTop: '229%' }}>
+            <Image src='assets/effects-line-2.svg' />
+          </div>
+      </div>
+    </>
   );
 }
 

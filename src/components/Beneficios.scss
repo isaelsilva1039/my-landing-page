@@ -1,14 +1,13 @@
 @import '../variables.scss';
 
-.container-beneficios{
-    
+.effect-line {
+}
+
+.container-beneficios{   
     width: 84%;
-    height: 2056px;
-    top: 1954px;
-    right: 0;
+    margin-left: 20rem;
     gap: 0px;
     border-radius: 48px 0px 0px 48px;
-    position: absolute;
     background: var(--colors-blue-light-50, #F0F9FF);
 
     & .container-beneficios-col1{

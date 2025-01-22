@@ -10,7 +10,7 @@ function Header() {
   return (
     <>
     <CustomNavbar />
-    <div className="hero-section">
+    <div className="hero-section" id='inicio'>
       <Container style={{flexDirection:'column'}}>
         <Row className="align-items-center">
           <Col md={7}  className="text-section">
@@ -22,15 +22,19 @@ function Header() {
             <Button variant="light" className="cta-button"> <Image src="assets/check.svg" />  Começar agora</Button>
           </Col>
           <Col  md={5}  className="image-section">
-            <Image src="assets/image@2x.png" alt="Pessoa usando plataforma" className="hero-image" fluid />
+            <Image src="assets/image-call.svg" alt="Pessoa usando plataforma" className="hero-image" fluid />
           </Col>
-          <div className='quadro-top'></div>
-          <div className='hero-image-bottom-left'></div>
+          {/* <div className='quadro-top'></div>
+          <div className='hero-image-bottom-left'></div> */}
         </Row>
         
-        <Image className='linha' src="assets/top-line-effect.svg" />
-        <Image src="assets/line-top-hedaer.png" alt="Pessoa usando plataforma" className="hero-image-top" fluid />
-        <Image src="assets/line-bottom.svg" alt="Pessoa usando plataforma" className="hero-image-bottom" fluid />
+        <div className='div-linha'>
+          <Image className='linha' src="assets/top-line-effect.svg" />
+          <div className="quadro"></div>
+        </div>
+
+        {/* <Image src="assets/line-top-hedaer.png" alt="Pessoa usando plataforma" className="hero-image-top" fluid />
+        <Image src="assets/line-bottom.svg" alt="Pessoa usando plataforma" className="hero-image-bottom" fluid /> */}
 
       </Container>
     </div>
