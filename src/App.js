@@ -14,13 +14,19 @@ import Sobre from './components/Sobre';
 import Parceirias from './components/Parceirias';
 import { Home } from './pages/Home/Home';
 import { Teste } from './components/Teste';
+import { HowWorks } from './pages/HowWorks/HowWorks';
 
 function App() {
   return (
     <div className="app-container">
+      
       <Home />
       
-      <Beneficios />
+      <HowWorks />
+  
+      <div style={{ position: 'absolute', right: 20, marginTop: '130%' }}>
+        <Image src='assets/effects-line-2.svg' />
+      </div>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: 100 }}>
         <div style={{ marginTop: '-40vh' }}>
@@ -28,6 +34,10 @@ function App() {
         </div>
 
         <Parceirias />
+
+        <div style={{ position: 'absolute', left: 120, marginTop: '98%' }}>
+          <Image src='assets/effects-line-3.svg' />
+        </div>
       </div>
 
       <div style={{ marginTop: '30vh', marginBottom: '30vh', display: 'flex', justifyContent: 'end' }}>
