@@ -1,5 +1,6 @@
 import { Col, Image } from "react-bootstrap";
 import './Teste.scss'
+import { CardGroup } from "./CardGroup";
 
 export function Teste() {
     return (
@@ -10,7 +11,8 @@ export function Teste() {
                 <span className="text-information">Experimente a flexibilidade e a personalização que sua empresa merece. Contrate os módulos que você precisa – Financeiro, PDV, Contabilidade e muito mais – tudo em uma única plataforma. Não perca tempo, inicie agora e veja como podemos ajudar a impulsionar seu sucesso!</span>
 
                 <Col className="start-now">
-                    <Image src="assets/card-group.svg"/>
+
+                    <CardGroup />
 
                     <div className="start-content">
                         <span className="start-title">Comece Agora!</span>

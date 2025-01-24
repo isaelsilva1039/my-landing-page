@@ -30,19 +30,21 @@ function BottomHeader() {
             </Col> */}
             <Col md={2}>
                 <div className='card'>
-                    <Image src="assets/line-top.svg" className='img-line-top' alt="Pessoa usando plataforma" fluid />
+                    <div>
+                        <Image src="assets/line-top.svg" className='img-line-top' alt="Pessoa usando plataforma" fluid />
 
-                    <div className='sub-card'>
-                        <div className='card-item'>
-                            <div className='item'>
-                            <Image src="assets/paint-brush.svg" alt="Pessoa usando plataforma" className="hero-image" fluid />
+                        <div className='sub-card'>
+                            <div className='card-item'>
+                                <div className='item'>
+                                <Image src="assets/paint-brush.svg" alt="Pessoa usando plataforma" className="hero-image" fluid />
+                                </div>
+
                             </div>
 
                         </div>
 
+                        <Image src="assets/line-bottom.svg" className='img-line-botton' alt="Pessoa usando plataforma" fluid />
                     </div>
-
-                    <Image src="assets/line-bottom.svg" className='img-line-botton' alt="Pessoa usando plataforma" fluid />
                     {/* <div className='div-quadro'></div> */}
                     <div className='titulo'>Personalidade</div>
                     <div className='text'>Configure, altere e personalize plataforma para melhor representar o seu negócio.</div>
@@ -91,9 +93,9 @@ function BottomHeader() {
             {/* </Row> */}
         </div>
 
-        <div style={{ position: 'absolute', marginLeft: '3vw' }}>
+        {/* <div style={{ position: 'absolute', marginLeft: '3vw' }}>
           <Image src="assets/effects-line.svg" />
-        </div>
+        </div>  */}
        {/* <ProductWhitLabel /> */}
        </>
     );

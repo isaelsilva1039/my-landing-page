@@ -56,9 +56,9 @@ const Parceirias = () => {
         </form>
       </Col>
 
-      <div style={{ position: 'absolute', marginTop: '168vh', marginLeft: '4vw' }}>
+      {/* <div style={{ position: 'absolute', marginTop: '168vh', marginLeft: '4vw' }}>
           <Image src='assets/effects-line-3.svg' />
-      </div>
+      </div> */}
     </div>
   );
 };

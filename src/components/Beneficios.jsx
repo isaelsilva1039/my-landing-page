@@ -15,10 +15,10 @@ function Beneficios() {
         <Image className='linha-96' src="assets/Vector1.png" />
       </div> */}
 
-     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '380vh', gap: 180 }}>
-      <div>
+     <>
+      {/* <div>
         <ProductWhitLabel />
-      </div>
+      </div> */}
 
 
       <div className="container-beneficios">
@@ -94,10 +94,10 @@ function Beneficios() {
 
       </div>
 
-          <div style={{ position: 'absolute', right: '2%', marginTop: '229%' }}>
+          {/* <div style={{ position: 'absolute', right: '2%', marginTop: '229%' }}>
             <Image src='assets/effects-line-2.svg' />
-          </div>
-      </div>
+          </div> */}
+      </>
     </>
   );
 }

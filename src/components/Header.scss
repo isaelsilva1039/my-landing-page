@@ -1,5 +1,5 @@
 .hero-section {
-  background: #1D4ED8;
+  width: 100%;
   color: white;
   padding: 4rem 0;
   z-index: 1;
@@ -9,7 +9,7 @@
   .hero-image-top{
     position: absolute;
     right: 797px;
-    top: 119px;
+    top: 100px;
     animation: moveUpDownTop 3s ease-in-out infinite;
   }
 
@@ -45,12 +45,14 @@
  
 
   .text-section {
+    padding: 74px 0px 0px;
 
-    padding: 74px 0px 0px h1 {
-      font-size: 2.5rem;
+    h1 {
+      max-width: 80%;
+
       margin-bottom: 1rem;
       font-family: var(--font-family-main, Inter);
-      font-size: 32px;
+      font-size: 1.5vw;
       font-style: normal;
       font-weight: 800;
       line-height: 150%;
@@ -58,14 +60,16 @@
     }
 
     p {
+      max-width: 80%;
+
       margin-bottom: 1.5rem;
-      font-size: 1.1rem;
+      font-size: 1vw;
     }
 
     .cta-button {
       display: flex;
-      width: 240px;
-      height: 48px;
+      width: auto;
+      height: auto;
       padding: 8px 16px;
       justify-content: center;
       align-items: center;
@@ -83,9 +87,6 @@
     justify-content: end;
 
     .hero-image {
-
-      width: 524px;
-      height: 524px;
       gap: 0px;
       border-radius: 8px;
       opacity: 0px;
@@ -98,8 +99,32 @@
     }
   }
 
+  @media (max-width: 1600px) {
+    .text-section {
+      max-width: 40%;
+      h1 {
+        font-size: 1.2rem;
+      }
 
+      p {
+        font-size: 1rem;
+      }
+
+      .image-section {
+        .hero-image {
+          width: 20vw;
+        }
+      }
+    }
+  }
 }
+
+@media (max-width: 1600px) { 
+  .hero-section {
+    margin-left: 10vw;
+  }
+}
+
 
 .linha {
   margin-top: 8%;
@@ -129,7 +154,6 @@
 
   .card {
     display: flex;
-    width: 308px;
     padding: 16px;
     flex-direction: column;
     justify-content: center;
@@ -140,6 +164,7 @@
     border: 1px solid var(--colors-gray-200, #E5E5E5);
     background: #FFF;
     height: fit-content;
+    width: fit-content;
     position: relative; /* Necessário para controlar a posição das imagens e do quadro */
     overflow: hidden; /* Esconde qualquer parte que se mova fora da área do card */
 
@@ -315,7 +340,13 @@
   }
 }
 
-
+@media (max-width: 1600px) {
+  .feature-cards {
+    margin-top: -12vh;
+    margin-left: -5vw;
+    gap: 10rem;
+  }
+}
 
 
     @keyframes moveUpDownTop {

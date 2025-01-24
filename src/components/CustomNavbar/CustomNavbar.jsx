@@ -13,38 +13,44 @@ function CustomNavbar() {
 
   return (
     <Navbar variant="dark" expand="lg" className="custom-navbar">
-      <Container>
-        <Navbar.Brand onClick={() => handleScroll('home')}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-evenly', width: '100%' }}>
+        <span>
           <img
-            src="assets/logo.png" // Substitua pelo caminho correto da imagem do logo
-            alt="Logo"
-            className="logo"
+              src="assets/logo.png" 
+              alt="Logo"
+              className="logo"
           />
-        </Navbar.Brand>
+        </span>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link onClick={() => handleScroll('inicio')} className="nav-item">
-              Início
-            </Nav.Link>
-            <Nav.Link onClick={() => handleScroll('como-funciona')} className="nav-item">
-              Como funciona
-            </Nav.Link>
-            <Nav.Link onClick={() => handleScroll('sobre-nos')} className="nav-item">
-              Sobre nós
-            </Nav.Link>
-            <Nav.Link onClick={() => handleScroll('parceiros')} className="nav-item">
-              Parceiros
-            </Nav.Link>
-            <Nav.Link onClick={() => handleScroll('politica')} className="nav-item">
-              Política de privacidade
-            </Nav.Link>
-          </Nav>
+        <div>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link onClick={() => handleScroll('inicio')} className="nav-item">
+                Início
+              </Nav.Link>
+              <Nav.Link onClick={() => handleScroll('como-funciona')} className="nav-item">
+                Como funciona
+              </Nav.Link>
+              <Nav.Link onClick={() => handleScroll('sobre-nos')} className="nav-item">
+                Sobre nós
+              </Nav.Link>
+              <Nav.Link onClick={() => handleScroll('parceiros')} className="nav-item">
+                Parceiros
+              </Nav.Link>
+              <Nav.Link onClick={() => handleScroll('politica')} className="nav-item">
+                Política de privacidade
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </div>
+
+        <div>
           <Button variant="outline-light" className="contact-button">
             <FaRegComment size={'20px'} /> Fale conosco
           </Button>
-        </Navbar.Collapse>
-      </Container>
+        </div>
+     
+      </div>
     </Navbar>
   );
 }

@@ -1,0 +1,45 @@
+.cards-icons {
+    display: flex;
+    gap: 1rem;
+  
+    /* Aplica o efeito hover no componente todo */
+    &:hover {
+      .image-card {
+        transform: rotate(-20deg) scale(1.10); /* Gira pra esquerda */
+      }
+  
+      .image-card-dolar {
+        transform: rotate(20deg) scale(1.10); /* Gira pra direita */
+      }
+    }
+  }
+
+  .cards-cart-note {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .image-card-dolar, .image-card {
+    transition: .3s ease;
+  }
+  
+  /* Adiciona transições suaves */
+  .card-cart, .card-note, .card-dolar {
+    background-color: #3B82F6;
+    width: 12.5rem;
+    height: 9.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-note {
+    background-color: #93C5FD;
+  }
+  
+  .card-dolar {
+    background-color: #DBEAFE;
+    height: 20rem; /* Mantém a altura maior */
+  }
+  
