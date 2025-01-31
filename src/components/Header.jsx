@@ -4,9 +4,6 @@ import CustomNavbar from './CustomNavbar/CustomNavbar';
 import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap';
 
 function Header() {
-
-
-  
   return (
     <>
       <CustomNavbar />
@@ -14,10 +11,10 @@ function Header() {
         <Container>
           <Row className="align-items-center" >
             <Col md={7}  className="text-section">
-              <h1>Controle o seu negócio, ganhe tempo e inove com a plataforma 2WL</h1>
+              <h1>Transforme a emissão de CT-es, MDF-es e a averbação de seguros com o WorkCTE</h1>
               <p>
-                Com a Work White Label é simples automatizar dados, visualizar resultados e economizar tempo para
-                tomar as melhores decisões.
+                O WorkCTE é a solução ideal para automatizar o processo de emissão de documentos fiscais e averbação de seguros. 
+                Reduza erros, otimize tempo e tenha total conformidade com a legislação.
               </p>
               <Button variant="light" className="cta-button"> <Image src="assets/check.svg" />  Começar agora</Button>
             </Col>
@@ -30,7 +27,6 @@ function Header() {
 
           <Image src="assets/line-top-hedaer.png" alt="Pessoa usando plataforma" className="hero-image-top" fluid />
           <Image src="assets/line-bottom.svg" alt="Pessoa usando plataforma" className="hero-image-bottom" fluid />
-
         </Container>
       </div>
     </>
