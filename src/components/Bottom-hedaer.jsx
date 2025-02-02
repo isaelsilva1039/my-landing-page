@@ -46,8 +46,8 @@ function BottomHeader() {
                         <Image src="assets/line-bottom.svg" className='img-line-botton' alt="Pessoa usando plataforma" fluid />
                     </div>
                     {/* <div className='div-quadro'></div> */}
-                    <div className='titulo'>Personalidade</div>
-                    <div className='text'>Configure, altere e personalize plataforma para melhor representar o seu negócio.</div>
+                    <div className='titulo'>Conformidade Fiscal</div>
+                    <div className='text'>Garanta que todos os seus documentos fiscais estejam em total conformidade com a legislação vigente, de forma automática e confiável.</div>
                 </div>
             </Col>
             <Col md={2}>
@@ -67,7 +67,7 @@ function BottomHeader() {
 
                     <Image src="assets/line-bottom.svg" className='img-line-botton' alt="Pessoa usando plataforma" fluid />
                     <div className='titulo'>Agilidade</div>
-                    <div className='text'>A 2WL permite iniciar um negócio do zero com rapidez, praticidade e sem burocracia.</div>
+                    <div className='text'>"Com o WorkCTE, emita CT-es e MDF-es em segundos, simplificando suas operações de transporte.</div>
                 </div>
             </Col>
             <Col md={2}>
@@ -87,7 +87,7 @@ function BottomHeader() {
                     <Image src="assets/line-bottom.svg" className='img-line-botton' alt="Pessoa usando plataforma" fluid />
                     {/* <div className='div-quadro'></div> */}
                     <div className='titulo'>Gestão de negócios</div>
-                    <div className='text'>Ganhe tempo para se dedicar inteiramente ao seu negócio enquanto cuidamos da tecnologia.</div>
+                    <div className='text'>Dedique-se ao que importa: seu negócio. Deixe que o WorkCTE cuide da documentação e conformidade.</div>
                 </div>
             </Col>
             {/* </Row> */}
